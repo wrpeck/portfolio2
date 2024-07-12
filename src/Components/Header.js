@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
-import Fade from "react-reveal";
+import Fade from "react-awesome-reveal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 class Header extends Component {
   render() {
@@ -11,9 +13,20 @@ class Header extends Component {
     const name = this.props.data.name;
     const description = this.props.data.description;
 
+    const socialLinks = this.props.data.social.map(function (social) {
+      return (
+        <li key={social.name}>
+          <a href={social.url}>
+            <i className={social.className}></i>
+          </a>
+        </li>
+      );
+    });
+
+
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        <ParticlesBg type="square" bg={true} velocity={[.5, 3]} />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -53,28 +66,28 @@ class Header extends Component {
                 Contact
               </a>
             </li>
+            <li>
+              <a href="https://wesleyp.substack.com/" target="_blank" rel="noopener noreferrer">Substack <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+            </li>
           </ul>
         </nav>
 
         <div className="row banner">
           <div className="banner-text">
-            <Fade bottom>
+            <Fade bottom triggerOnce>
               <h1 className="responsive-headline">{name}</h1>
             </Fade>
-            <Fade bottom duration={1200}>
+            <Fade bottom duration={1200} triggerOnce>
               <h3>{description}.</h3>
             </Fade>
             <hr />
-            <Fade bottom duration={2000}>
-              <ul className="social">
-                <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
-                </a>
-                <a href={github} className="button btn github-btn">
-                  <i className="fa fa-github"></i>Github
-                </a>
-              </ul>
-            </Fade>
+            <div className="row">
+              <Fade bottom triggerOnce>
+                <div className="social">
+                  <ul className="social-links">{socialLinks}</ul>
+                </div>
+              </Fade>
+            </div>
           </div>
         </div>
 

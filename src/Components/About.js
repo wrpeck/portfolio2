@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
+import Fade from "react-awesome-reveal";
 
 class About extends Component {
   render() {
@@ -18,7 +18,7 @@ class About extends Component {
 
     return (
       <section id="about">
-        <Fade duration={1000}>
+        <Fade duration={1000} triggerOnce>
           <div className="row">
             <div className="three columns">
               <img
@@ -38,8 +38,8 @@ class About extends Component {
                     <span>{name}</span>
                     <br />
                     <span>
-                      {street}
-                      <br />
+                      {/* {street && street}
+                      {street ** <br />} */}
                       {city} {state}, {zip}
                     </span>
                     <br />

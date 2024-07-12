@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
+import Fade from "react-awesome-reveal";
 
 class Footer extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const networks = this.props.data.social.map(function (network) {
+    const socialLinks = this.props.data.social.map(function (social) {
       return (
-        <li key={network.name}>
-          <a href={network.url}>
-            <i className={network.className}></i>
+        <li key={social.name}>
+          <a href={social.url}>
+            <i className={social.className}></i>
           </a>
         </li>
       );
@@ -18,9 +18,9 @@ class Footer extends Component {
     return (
       <footer>
         <div className="row">
-          <Fade bottom>
+          <Fade bottom triggerOnce>
             <div className="twelve columns">
-              <ul className="social-links">{networks}</ul>
+              <ul className="social-links">{socialLinks}</ul>
 
               <ul className="copyright">
                 <li>&copy; Copyright 2021 Nordic Giant</li>
