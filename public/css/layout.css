@@ -1299,6 +1299,7 @@ footer .social-links li:first-child {
 /*Proficiencies Buttons*/
 .controls-row {
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
    gap: 10px;
@@ -1318,6 +1319,7 @@ footer .social-links li:first-child {
    padding: 5px 10px;
    border: none;
    cursor: pointer;
+   width: 100%;
 }
 
 .filter-button,
@@ -1375,3 +1377,41 @@ footer .social-links li:first-child {
    -khtml-border-radius: 0px;
    border-radius: 0px;
 }
+
+.controls-row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   margin-left: 5px;
+   margin-right: 5px;
+ }
+ 
+ .filter-buttons,
+ .sort-buttons,
+ .category-dropdown {
+   width: 100%;
+ }
+ 
+ .filter-button,
+ .sort-button,
+ select {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px; /* Space between buttons */
+ }
+ 
+ @media (min-width: 768px) {
+   .filter-buttons,
+   .sort-buttons,
+   .category-dropdown {
+     width: auto;
+   }
+ 
+   .filter-button,
+   .sort-button,
+   select {
+     width: auto;
+     margin-bottom: 0; /* Remove space between buttons */
+   }
+ }
+ 

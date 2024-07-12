@@ -142,68 +142,53 @@ class Portfolio extends Component {
           <div className="row">
             <div className="twelve columns collapsed">
               <h1>Other platform experience and proficiencies</h1>
-
+    
               <div className="controls-row">
+                {/* Filter Buttons */}
                 <div className="filter-buttons">
                   <button
-                    className={`inline-button-start filter-button ${selectedLevel === null ? "selected" : ""
-                      }`}
+                    className={`filter-button inline-button-start ${selectedLevel === null ? "selected" : ""}`}
                     onClick={() => this.handleFilterChange(null)}
                   >
                     All
                   </button>
                   <button
-                    className={`inline-button-mid filter-button ${selectedLevel === ProficiencyLevel.Beginner
-                      ? "selected"
-                      : ""
-                      }`}
-                    onClick={() =>
-                      this.handleFilterChange(ProficiencyLevel.Beginner)
-                    }
+                    className={`filter-button inline-button-mid ${selectedLevel === ProficiencyLevel.Beginner ? "selected" : ""}`}
+                    onClick={() => this.handleFilterChange(ProficiencyLevel.Beginner)}
                   >
                     Familiar
                   </button>
                   <button
-                    className={`inline-button-mid filter-button ${selectedLevel === ProficiencyLevel.Intermediate
-                      ? "selected"
-                      : ""
-                      }`}
-                    onClick={() =>
-                      this.handleFilterChange(ProficiencyLevel.Intermediate)
-                    }
+                    className={`filter-button inline-button-mid ${selectedLevel === ProficiencyLevel.Intermediate ? "selected" : ""}`}
+                    onClick={() => this.handleFilterChange(ProficiencyLevel.Intermediate)}
                   >
                     Proficient
                   </button>
                   <button
-                    className={`inline-button-end filter-button ${selectedLevel === ProficiencyLevel.Expert
-                      ? "selected"
-                      : ""
-                      }`}
-                    onClick={() =>
-                      this.handleFilterChange(ProficiencyLevel.Expert)
-                    }
+                    className={`filter-button inline-button-end ${selectedLevel === ProficiencyLevel.Expert ? "selected" : ""}`}
+                    onClick={() => this.handleFilterChange(ProficiencyLevel.Expert)}
                   >
                     Advanced
                   </button>
                 </div>
-
+    
+                {/* Sort Buttons */}
                 <div className="sort-buttons">
                   <button
-                    className={`sort-button inline-button-start ${sortBy === "name" ? "selected" : ""
-                      }`}
+                    className={`sort-button inline-button-start ${sortBy === "name" ? "selected" : ""}`}
                     onClick={() => this.handleSortChange("name")}
                   >
                     Sort by Name
                   </button>
                   <button
-                    className={`sort-button inline-button-end ${sortBy === "level" ? "selected" : ""
-                      }`}
+                    className={`sort-button inline-button-end ${sortBy === "level" ? "selected" : ""}`}
                     onClick={() => this.handleSortChange("level")}
                   >
                     Sort by Level
                   </button>
                 </div>
-
+    
+                {/* Category Dropdown */}
                 <div className="category-dropdown">
                   <select
                     onChange={this.handleCategoryChange}
@@ -218,11 +203,8 @@ class Portfolio extends Component {
                   </select>
                 </div>
               </div>
-
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
+    
+              <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
                 {proficiencyItems}
               </div>
             </div>
