@@ -12,6 +12,7 @@ class Header extends Component {
     // const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
+    const email = this.props.data.email;
 
     const socialLinks = this.props.data.social.map(function (social) {
       return (
@@ -57,17 +58,19 @@ class Header extends Component {
 
             <li>
               <a className="smoothscroll" href="#portfolio">
-                Works
+                Skills
               </a>
             </li>
 
             <li>
-              <a className="smoothscroll" href="#contact">
+              <a href={"mailto:"+email} target="_blank">
                 Contact
               </a>
             </li>
             <li>
-              <a href="https://wesleyp.substack.com/" target="_blank" rel="noopener noreferrer">Substack <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+              <a href="https://wesleyp.substack.com/" target="_blank" rel="noopener noreferrer">
+                Substack <FontAwesomeIcon icon={faExternalLinkAlt} />
+              </a>
             </li>
           </ul>
         </nav>
