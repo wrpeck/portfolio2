@@ -105,7 +105,7 @@ header .social li a {
 }
 
 header .social li a:hover {
-   color: #0762f9;
+   color: #CAB591;
 }
 
 /* scrolldown link */
@@ -123,14 +123,14 @@ header .scrolldown a {
    color: #fff;
    border-radius: 100%;
 
-   /* -webkit-transition: all .3s ease-in-out;
+   -webkit-transition: all .3s ease-in-out;
    -moz-transition: all .3s ease-in-out;
    -o-transition: all .3s ease-in-out;
-   transition: all .3s ease-in-out; */
+   transition: all .3s ease-in-out;
 }
 
 header .scrolldown a:hover {
-   color: #0762f9;
+   color: #CAB591;
 }
 
 /* primary navigation
@@ -1197,6 +1197,7 @@ footer a:focus {
 footer .copyright {
    margin: 0;
    padding: 0;
+   color: #CAB591;
 }
 
 footer .copyright li {
@@ -1256,11 +1257,11 @@ footer .social-links li:first-child {
    height: 60px;
    background-color: #525252;
 
-   /* -webkit-transition: all 0.2s ease-in-out;
+   -webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
    -o-transition: all 0.2s ease-in-out;
    -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out; */
+   transition: all 0.2s ease-in-out;
 
    color: #fff;
    font-size: 21px;
@@ -1269,7 +1270,8 @@ footer .social-links li:first-child {
 }
 
 #go-top a:hover {
-   background-color: #0F9095;
+   background-color: #CAB591;
+   color: black;
 }
 
 
@@ -1320,14 +1322,14 @@ footer .social-links li:first-child {
 
 .filter-button,
 .sort-button {
-   background-color: #444;
-   color: #fff;
+   background-color: #CAB591;
+   color: #000945;
 }
 
 .filter-button:hover,
 .sort-button:hover {
-   background-color: #CAB591;
-   color: #000945;
+   background-color: #444;
+   color: #fff;
 }
 
 .inline-button-start {
@@ -1345,10 +1347,8 @@ footer .social-links li:first-child {
 }
 
 .selected {
-   background-color: #CAB591;
-   /* Example selected background color */
-   color: #000945;
-   /* Example selected text color */
+   background-color: #444;
+   color: #fff;
 }
 
 .resume-button {

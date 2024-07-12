@@ -84,7 +84,7 @@ class Header extends Component {
             <div className="row">
               <Fade bottom triggerOnce>
                 <div className="social">
-                  <ul className="social-links">{socialLinks}</ul>
+                  <ul className="social-links-header">{socialLinks}</ul>
                 </div>
               </Fade>
             </div>
