@@ -93,27 +93,15 @@
       },
       {
         "name":"SQL & Data Analysis",
-        "level":"80%"
-      },
-      {
-        "name":"Pricing and Cost Modeling",
         "level":"90%"
       },
       {
-        "name":"Flutter / Dart",
+        "name":"Pricing Strategy",
+        "level":"80%"
+      },
+      {
+        "name":"Public Speaking",
         "level":"70%"
-      },
-      {
-        "name":"JS (React, NodeJS)",
-        "level":"50%"
-      },
-      {
-        "name":"C# / Unity",
-        "level":"40%"
-      },
-      {
-        "name":"AWS Cloud",
-        "level":"60%"
       }
     ]
   },
@@ -125,11 +113,11 @@
         "level":"Proficient",
         "link":"https://www.twilio.com/en-us",
         "categories": [
-          "SUPPORT_TECHNOLOGY",
+          "SUPP",
           "TELEPHONY",
           "SAAS"
         ],
-        "summary": "Build a VoIP round-robin tool to replace the primary IT Help Desk phone system at University of San Diego"
+        "summary": "Build a VoIP round-robin tool to replace the primary IT Help Desk phone system at University of San Diego."
       },
       {
         "id": 2,
@@ -138,7 +126,8 @@
         "level":"Familiar",
         "categories": [
           "DESIGN"
-        ]
+        ],
+        "summary": "Extensive experience with FigJam. Some experience building components with an existing design library."
       },
       {
         "id": 3,
@@ -148,7 +137,8 @@
         "categories": [
           "PROJ",
           "PM"
-        ]
+        ],
+        "summary": "Extensive experience using Asana for Product Management, Project Management, and data collection via forms."
       },
       {
         "id": 4,
@@ -156,8 +146,9 @@
         "link":"https://github.com/",
         "level":"Proficient",
         "categories": [
-          "CODE"
-        ]
+          "CICD"
+        ],
+        "summary":"Familiarity with core git management functionality, branching, PRs, and merging."
       },
       {
         "id": 5,
@@ -165,9 +156,9 @@
         "link":"https://www.snowflake.com/en/",
         "level":"Proficient",
         "categories": [
-          "CODE",
           "DATA"
-        ]
+        ],
+        "summary":"Extensive experience as read-only SQL user. No experience with technical administration."
       },
       {
         "id": 6,
@@ -175,9 +166,10 @@
         "link":"https://aws.amazon.com/lambda/",
         "level":"Familiar",
         "categories": [
-          "CODE",
-          "CLOUD"
-        ]
+          "CLOUD",
+          "AWS"
+        ],
+        "summary":"Experience with basic serverless function creation and testing via cURL/Postman."
       },
       {
         "id": 7,
@@ -185,9 +177,10 @@
         "link":"https://aws.amazon.com/amplify/",
         "level":"Advanced",
         "categories": [
-          "CODE",
-          "CLOUD"
-        ]
+          "CLOUD",
+          "AWS"
+        ],
+        "summary":"Extensive experience with fullstack app development using AWS Amplify libraries for Data, Auth, Storage, and UI."
       },
       {
         "id": 8,
@@ -195,10 +188,10 @@
         "link":"https://firebase.google.com/",
         "level":"Proficient",
         "categories": [
-          "CODE",
           "CLOUD",
           "GC"
-        ]
+        ],
+        "summary":"Built several Flutter mobile apps using Firebase Firestore NoSQL data, Firebase Auth, and Firebase serverless functions."
       },
       {
         "id": 9,
@@ -207,7 +200,8 @@
         "level":"Advanced",
         "categories": [
           "DATA"
-        ]
+        ],
+        "summary":"Power user of Excel functions and array formulas. Experience with VBA programming."
       },
       {
         "id": 10,
@@ -216,18 +210,20 @@
         "level":"Advanced",
         "categories": [
           "DATA"
-        ]
+        ],
+        "summary":"Power user of most Sheets functions and array formulas. Experience with GScripting for additional functionality."
       },
       {
         "id": 11,
         "title":"Amazon Quicksight",
         "link":"https://aws.amazon.com/quicksight",
-        "level":"Proficient",
+        "level":"Familiar",
         "categories": [
           "DATA",
           "CLOUD",
           "AWS"
-        ]
+        ],
+        "summary":"Extensive experience as dashboard user, some experience with dashboard creation from SQL data sources."
       },
       {
         "id": 12,
@@ -237,7 +233,8 @@
         "categories": [
           "CLOUD",
           "AWS"
-        ]
+        ],
+        "summary":"Basic API creation and mapping to AWS Lambda and IAM."
       },
       {
         "id": 13,
@@ -247,7 +244,186 @@
         "categories": [
           "PROJ",
           "PM"
-        ]
+        ],
+        "summary":"Extensive experience using Jira for Product Management Epics, Stories, and documentation via Confluence."
+      },
+      {
+        "id": 14,
+        "title":"Flutter / Dart",
+        "level":"Proficient",
+        "categories": [
+          "CODE",
+          "MOBILE"
+        ],
+        "summary":"Built several fullstack, cross-platform Flutter mobile apps"
+      },
+      {
+        "id": 15,
+        "title":"ReactJS",
+        "level":"Proficient",
+        "categories": [
+          "CODE",
+          "WEB"
+        ],
+        "summary": "Built and published several websites with simple to moderate state management using ReactJS framework"
+      },
+      {
+        "id": 16,
+        "title":"NextJS",
+        "level":"Familiar",
+        "categories": [
+          "CODE",
+          "WEB"
+        ],
+        "summary": "Some experience with server-side rendering and Vercel hosting"
+      },
+      {
+        "id": 17,
+        "title":"SQL",
+        "level":"Advanced",
+        "categories": [
+          "DATA",
+          "CODE"
+        ],
+        "summary": "Comfortable with complex joins, aggregation, lag functions, subquery creation, and some SQL database administration."
+      },
+      {
+        "id": 18,
+        "title":"HTML/CSS",
+        "level":"Proficient",
+        "categories": [
+          "WEB",
+          "CODE"
+        ],
+        "summary": "Confident in HTML and CSS general knowledge and usage within JS frameworks. Not a CSS or styling expert."
+      },
+      {
+        "id": 19,
+        "title":"JavaScript / NodeJS",
+        "level":"Proficient",
+        "categories": [
+          "WEB",
+          "CODE"
+        ],
+        "summary": "Comfortable with both client and server-side JavaScript and TypeScript. Prefer TypeScript for strong typing."
+      },
+      {
+        "id": 20,
+        "title":"Unity / C#",
+        "level":"Familiar",
+        "categories": [
+          "CODE"
+        ],
+        "summary": "Completed several online courses for basic game development with Unity and C#."
+      },
+      {
+        "id": 21,
+        "title":"PHP",
+        "level":"Proficient",
+        "categories": [
+          "CODE",
+          "WEB"
+        ],
+        "summary": "Build fullstack social networking web app as employee portal for University of San Diego."
+      },
+      {
+        "id": 22,
+        "title":"Salesforce",
+        "level":"Familiar",
+        "categories": [
+          "CRM",
+          "SAAS",
+          "SUPP"
+        ],
+        "summary": "Experience with Salesforce Service Cloud for customer support."
+      },
+      {
+        "id": 23,
+        "title":"ServiceNow",
+        "level":"Proficient",
+        "categories": [
+          "CRM",
+          "SAAS",
+          "SUPP"
+        ],
+        "summary": "Designed and implemented custom hardware check-in and repair system."
+      },
+      {
+        "id": 24,
+        "title":"Financial Modeling",
+        "level":"Advanced",
+        "categories": [
+          "BUS"
+        ],
+        "summary": "Designed many sustainable cost and profit models for product pricing and financial planning purposes."
+      },
+      {
+        "id": 25,
+        "title":"Project Valuation",
+        "level":"Proficient",
+        "categories": [
+          "BUS"
+        ],
+        "summary": "Studied corporate finance in MBA, focusing on project valuation over time."
+      },
+      {
+        "id": 26,
+        "title":"Supply Chain Management",
+        "level":"Proficient",
+        "categories": [
+          "BUS"
+        ],
+        "summary": "Experience with ecommerce order fulfillment systems, ship node optimization, and queueing theory."
+      },
+      {
+        "id": 27,
+        "title":"Adobe Analytics",
+        "level":"Familiar",
+        "categories": [
+          "BUS",
+          "DATA",
+          "WEB"
+        ],
+        "summary": "Experience as Adobe Analytics user. Some experience with custom dashboard creation."
+      },
+      {
+        "id": 28,
+        "title":"Python",
+        "level":"Familiar",
+        "categories": [
+          "CODE"
+        ],
+        "summary": "Basic Python scripting experience. Some experience with Pandas and NumPy for data analysis"
+      },
+      {
+        "id": 29,
+        "title":"AWS IAM",
+        "level":"Familiar",
+        "categories": [
+          "CLOUD",
+          "AWS"
+        ],
+        "summary": "Basic familiarity with basic management of users, roles, policies, and permission boundaries."
+      },
+      {
+        "id": 30,
+        "title":"AWS S3",
+        "level":"Familiar",
+        "categories": [
+          "CLOUD",
+          "AWS"
+        ],
+        "summary": "Basic familiarity file storage and static site hosting."
+      },
+      {
+        "id": 31,
+        "title":"Agile / Scrum",
+        "level":"Advanced",
+        "categories": [
+          "PM",
+          "PROJ"
+        ],
+        "summary": "Extensive experience with feature design, epic and user story drafting, acceptance criteria, and product shipping."
       }
     ]
   }

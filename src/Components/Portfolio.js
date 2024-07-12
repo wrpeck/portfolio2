@@ -210,7 +210,7 @@ class Portfolio extends Component {
                     value={selectedCategory || ""}
                   >
                     <option value="">All Categories</option>
-                    {Object.values(Categories).map((category) => (
+                    {Object.values(Categories).sort().map((category) => (
                       <option key={category} value={category}>
                         {category}
                       </option>
