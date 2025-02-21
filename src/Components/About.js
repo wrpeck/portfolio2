@@ -45,7 +45,7 @@ class About extends Component {
                     <br />
                     <span>{phone}</span>
                     <br />
-                    <span><a href={"mailto:"+email} target="_blank">{email}</a></span>
+                    <span><a href={"mailto:"+email} target="_blank" rel="noopener noreferrer">{email}</a></span>
                   </p>
                 </div>
                 <div className="columns download">

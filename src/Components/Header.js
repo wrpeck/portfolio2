@@ -63,7 +63,7 @@ class Header extends Component {
             </li>
 
             <li>
-              <a href={"mailto:"+email} target="_blank">
+              <a href={"mailto:"+email} target="_blank" rel="noopener noreferrer">
                 Contact
               </a>
             </li>
